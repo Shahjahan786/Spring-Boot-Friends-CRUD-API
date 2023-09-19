@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "7e947685-00bc-46f4-970d-652d839329fe",
+		"name": "Friends Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/friends/all"
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/friends/update?id=3&name=Hassan&profession=Land Lord&age=31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friends",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "name",
+							"value": "Hassan"
+						},
+						{
+							"key": "profession",
+							"value": "Land Lord"
+						},
+						{
+							"key": "age",
+							"value": "31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/friends/add?id=2&name=Hassan&profession=Driver&age=27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friends",
+						"add"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "Hassan"
+						},
+						{
+							"key": "profession",
+							"value": "Driver"
+						},
+						{
+							"key": "age",
+							"value": "27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/friends/delete?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friends",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
